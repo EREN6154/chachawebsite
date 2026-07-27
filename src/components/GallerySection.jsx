@@ -26,6 +26,50 @@ const GALLERY_ITEMS = [
     guest: "Viajeros de Madrid & Valencia"
   },
   {
+    id: "victor-bangla-sahib-selfie",
+    img: "/images/gallery/victor-bangla-sahib-selfie.jpg",
+    title: { es: "Victor en Gurudwara Bangla Sahib", en: "Victor at Gurudwara Bangla Sahib" },
+    location: { es: "Nueva Delhi", en: "New Delhi" },
+    caption: {
+      es: "«Visitando el icónico templo sikh de Bangla Sahib con pañuelos naranjas tradicionales junto a Victor.»",
+      en: "“Visiting the iconic Sikh temple Bangla Sahib with traditional orange head covers alongside Victor.”"
+    },
+    guest: "Grupo de Viajeros (Madrid & Barcelona)"
+  },
+  {
+    id: "taj-mahal-arch-reflection",
+    img: "/images/gallery/taj-mahal-arch-reflection.png",
+    title: { es: "Silueta y Reflejo en el Taj Mahal", en: "Taj Mahal Arch Silhouette & Reflection" },
+    location: { es: "Agra, Uttar Pradesh", en: "Agra, Uttar Pradesh" },
+    caption: {
+      es: "«Composición artística inolvidable enmarcados en el arco y reflejados en el suelo de mármol del Taj Mahal.»",
+      en: "“Unforgettable artistic composition framed in the archway and reflected on the Taj Mahal marble floor.”"
+    },
+    guest: "Pareja de Viajeros (Valencia)"
+  },
+  {
+    id: "airport-group-arrival-victor",
+    img: "/images/gallery/airport-group-arrival-victor.png",
+    title: { es: "Recepción de Bienvenida en el Aeropuerto", en: "Airport Arrival Welcome Reception" },
+    location: { es: "Bienvenida Tradicional", en: "Traditional Welcome" },
+    caption: {
+      es: "«Recepción cálida con guirnaldas de flores de caléndula a la llegada a India con Victor.»",
+      en: "“Warm welcome reception with traditional marigold flower garlands on arrival in India with Victor.”"
+    },
+    guest: "Grupo de Viajeros (España)"
+  },
+  {
+    id: "airport-garland-welcome",
+    img: "/images/gallery/airport-garland-welcome.jpg",
+    title: { es: "Bienvenida con Guirnaldas de Caléndula", en: "Marigold Garlands Welcome" },
+    location: { es: "Bienvenida Oficial", en: "Official Welcome" },
+    caption: {
+      es: "«Inicio de ruta con el toque tradicional indio desde el primer momento en el aeropuerto.»",
+      en: "“Starting the tour with an authentic traditional Indian touch right from the airport arrival.”"
+    },
+    guest: "Familia & Amigos (Bilbao)"
+  },
+  {
     id: "victor-india-gate",
     img: "/images/gallery/victor-india-gate.jpg",
     title: { es: "Victor con Viajero en Puerta de la India", en: "Victor with Traveler at India Gate" },
