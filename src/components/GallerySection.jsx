@@ -4,6 +4,61 @@ import useReveal from "../hooks/useReveal.js";
 
 const GALLERY_ITEMS = [
   {
+    id: "victor-india-gate",
+    img: "/images/gallery/victor-india-gate.jpg",
+    title: { es: "Victor con Viajero en Puerta de la India", en: "Victor with Traveler at India Gate" },
+    location: { es: "Nueva Delhi", en: "New Delhi" },
+    caption: {
+      es: "«Comenzando la aventura por Delhi junto a Victor frente al emblemático monumento de India Gate.»",
+      en: "“Starting our Delhi adventure with Victor in front of the iconic India Gate monument.”"
+    },
+    guest: "Javier M. (Madrid)"
+  },
+  {
+    id: "victor-jaipur-group",
+    img: "/images/gallery/victor-jaipur-group.jpg",
+    title: { es: "Recorriendo el Palacio de Jaipur con Victor", en: "Exploring Jaipur Palace with Victor" },
+    location: { es: "Jaipur, Rajastán", en: "Jaipur, Rajasthan" },
+    caption: {
+      es: "«Explorar los patios del Palacio de la Ciudad de Jaipur con nuestro guía Victor fue de las mejores experiencias del viaje.»",
+      en: "“Exploring Jaipur's City Palace courtyards with our guide Victor was one of the highlights of our trip.”"
+    },
+    guest: "Marta, Elena & Carmen (Valencia)"
+  },
+  {
+    id: "amer-fort-elephant-ride",
+    img: "/images/gallery/amer-fort-elephant-ride.jpg",
+    title: { es: "Subida al Fuerte Amber", en: "Elephant Ride at Amber Fort" },
+    location: { es: "Amber, Rajastán", en: "Amber, Rajasthan" },
+    caption: {
+      es: "«Subir al histórico Fuerte Amber como los antiguos maharajás con sombrilla tradicional.»",
+      en: "“Ascending historical Amber Fort like the ancient Maharajas with traditional sun umbrellas.”"
+    },
+    guest: "Ignacio & Teresa (Sevilla)"
+  },
+  {
+    id: "victor-traveler-selfie",
+    img: "/images/gallery/victor-traveler-selfie.jpg",
+    title: { es: "Bienvenida y Recepción Privada", en: "Welcome & Private Reception" },
+    location: { es: "Atención Personalizada", en: "Personalized Support" },
+    caption: {
+      es: "«Desde la llegada al hotel hasta el último día, Victor se encarga de que todo salga perfecto.»",
+      en: "“From arrival at the hotel until the last day, Victor makes sure everything runs perfectly.”"
+    },
+    guest: "David S. (Barcelona)"
+  },
+  {
+    id: "shore-temple-mahabalipuram",
+    img: "/images/gallery/shore-temple-mahabalipuram.png",
+    title: { es: "Templo de la Orilla y Reflejo Espejo", en: "Shore Temple & Water Mirror Reflection" },
+    location: { es: "Mahabalipuram, Sur de India", en: "Mahabalipuram, South India" },
+    caption: {
+      es: "«El milenario Templo de la Orilla tallado en granito reflejado sobre las aguas en Mahabalipuram.»",
+      en: "“The ancient granite Shore Temple reflected over the water mirror in Mahabalipuram.”"
+    },
+    guest: "Familia Beltrán (Bilbao)"
+  },
+  {
     id: "victor-guide-selfie",
     img: "/images/gallery/victor-guide-selfie.png",
     title: { es: "Victor — Tu Guía en India", en: "Victor — Your Guide in India" },
