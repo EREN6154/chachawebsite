@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import LangToggle from "./LangToggle.jsx";
 import { useT } from "../context/LangContext.jsx";
@@ -8,6 +8,17 @@ export default function Navbar() {
   const t = useT();
   const linkClass = ({ isActive }) => (isActive ? "active" : "");
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <nav className="nav">
       <div className="nav-inner">
@@ -15,6 +26,9 @@ export default function Navbar() {
           <span className="brand-box">{t({ es: "Viaje India", en: "India trip" })}</span>
           <span className="brand-sub">Planeta</span>
         </Link>
+
+        {open && <div className="nav-backdrop" onClick={() => setOpen(false)} />}
+
         <div className={`nav-links ${open ? "open" : ""}`}>
           <NavLink to="/viajes" className={linkClass} onClick={() => setOpen(false)}>{t({ es: "Tours", en: "Tours" })}</NavLink>
           <NavLink to="/nosotros" className={linkClass} onClick={() => setOpen(false)}>{t({ es: "Por qué nosotros", en: "Why us" })}</NavLink>
@@ -22,10 +36,12 @@ export default function Navbar() {
           <LangToggle />
           <a href="https://wa.me/918949454247" target="_blank" rel="noopener noreferrer" className="nav-cta" onClick={() => setOpen(false)}>WhatsApp</a>
         </div>
-        <button className="nav-toggle" aria-label="Menu" onClick={() => setOpen(v => !v)}>
+        
+        <button className={`nav-toggle ${open ? "open" : ""}`} aria-label="Menu" onClick={() => setOpen(v => !v)}>
           <span></span><span></span><span></span>
         </button>
       </div>
     </nav>
   );
 }
+

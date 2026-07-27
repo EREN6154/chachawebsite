@@ -60,7 +60,7 @@ export default function TourDetail() {
       )}
 
       <section style={{ paddingTop: 70 }}>
-        <div className="container" style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: 60 }}>
+        <div className="container tour-detail-layout">
           <div>
             <div className="reveal">
               <span className="eyebrow">{t({ es: "Lo más destacado", en: "Highlights" })}</span>

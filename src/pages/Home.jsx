@@ -125,8 +125,8 @@ export default function Home() {
                 { es: ["18 años en ruta", "Los mismos hoteles, choferes y contactos de confianza, probados durante casi dos décadas."], en: ["18 years on the road", "The same hotels, drivers and trusted contacts, tested for almost two decades."] },
                 { es: ["Itinerarios reales", "Cada tour de esta web es un recorrido que hemos hecho, no una plantilla genérica."], en: ["Actual itineraries", "Every tour on this website is a route we have taken, not a generic template."] }
               ].map((item, i) => (
-                <li key={i} style={{ padding: "16px 0", borderBottom: "1px solid rgba(20,24,31,0.1)", fontSize: 15, color: "#4a4740", display: "flex", gap: 14 }}>
-                  <b style={{ color: "var(--indigo)", fontWeight: 500, minWidth: 150 }}>{t(item)[0]}</b>
+                <li key={i} style={{ padding: "16px 0", borderBottom: "1px solid rgba(20,24,31,0.1)", fontSize: 15, color: "#4a4740", display: "flex", flexWrap: "wrap", gap: "6px 14px" }}>
+                  <b style={{ color: "var(--indigo)", fontWeight: 500, minWidth: 130 }}>{t(item)[0]}</b>
                   <span>{t(item)[1]}</span>
                 </li>
               ))}
