@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useT } from "../context/LangContext.jsx";
+import useReveal from "../hooks/useReveal.js";
 
 const GALLERY_ITEMS = [
   {
@@ -303,6 +304,7 @@ const GALLERY_ITEMS = [
 
 export default function GallerySection() {
   const t = useT();
+  useReveal();
   const [selectedIdx, setSelectedIdx] = useState(null);
 
   useEffect(() => {
@@ -338,7 +340,7 @@ export default function GallerySection() {
           </p>
         </div>
 
-        <div className="gallery-grid reveal">
+        <div className="gallery-grid">
           {GALLERY_ITEMS.map((item, idx) => (
             <div
               key={item.id}
