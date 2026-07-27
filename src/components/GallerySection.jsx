@@ -3,6 +3,61 @@ import { useT } from "../context/LangContext.jsx";
 
 const GALLERY_ITEMS = [
   {
+    id: "traveler-rajasthan",
+    img: "/images/gallery/traveler-rajasthan.jpg",
+    title: { es: "Encuentros Culturales en Rajastán", en: "Cultural Encounters in Rajasthan" },
+    location: { es: "Jaipur, Rajastán", en: "Jaipur, Rajasthan" },
+    caption: {
+      es: "«Compartir sonrisas con las mujeres locales en Jaipur. Victor nos conectó con la gente real de una forma entrañable.»",
+      en: "“Sharing smiles with local women in Jaipur. Victor connected us with real people in a warm, genuine way.”"
+    },
+    guest: "Clara M. (Madrid)"
+  },
+  {
+    id: "varanasi-boat-sadhu",
+    img: "/images/gallery/varanasi-boat-sadhu.jpg",
+    title: { es: "Amanecer Espiritual en Varanasi", en: "Spiritual Sunrise in Varanasi" },
+    location: { es: "Varanasi, Uttar Pradesh", en: "Varanasi, Uttar Pradesh" },
+    caption: {
+      es: "«Navegando al amanecer por los ghats sagrados del río Ganges. Una experiencia mística irrepetible.»",
+      en: "“Sailing at sunrise along the sacred ghats of the Ganges River. A truly mystical experience.”"
+    },
+    guest: "Pedro & Lucía (Sevilla)"
+  },
+  {
+    id: "taj-mahal-sunset",
+    img: "/images/gallery/taj-mahal-sunset.jpg",
+    title: { es: "Taj Mahal al Atardecer desde Mehtab Bagh", en: "Taj Mahal at Sunset from Mehtab Bagh" },
+    location: { es: "Agra", en: "Agra" },
+    caption: {
+      es: "«Una perspectiva tranquila y distinta del Taj Mahal al atardecer sobre el río Yamuna. Inolvidable.»",
+      en: "“A peaceful, unique perspective of the Taj Mahal at sunset across the Yamuna river. Unforgettable.”"
+    },
+    guest: "Sofía G. (Valencia)"
+  },
+  {
+    id: "hawa-mahal",
+    img: "/images/gallery/hawa-mahal.jpg",
+    title: { es: "Hawa Mahal al Anochecer", en: "Hawa Mahal at Dusk" },
+    location: { es: "Jaipur, Rajastán", en: "Jaipur, Rajasthan" },
+    caption: {
+      es: "«Los colores del Palacio de los Vientos iluminado al anochecer son deslumbrantes.»",
+      en: "“The colors of the illuminated Palace of Winds at dusk are mesmerizing.”"
+    },
+    guest: "David & Laura (Bilbao)"
+  },
+  {
+    id: "sadhu-marigold",
+    img: "/images/gallery/sadhu-marigold.jpg",
+    title: { es: "Retrato de Sadhu con Flores de Caléndula", en: "Sadhu Portrait with Marigold Flowers" },
+    location: { es: "Varanasi", en: "Varanasi" },
+    caption: {
+      es: "«Conocer la devoción y tradiciones de los hombres sagrados de India con el respeto que inspira nuestro guía Victor.»",
+      en: "“Learning about the devotion and traditions of India's holy men with the deep respect guided by Victor.”"
+    },
+    guest: "Familia Ramos (Barcelona)"
+  },
+  {
     id: "qutub-minar",
     img: "/images/gallery/qutub-minar.jpg",
     title: { es: "Qutub Minar y Ruinas Históricas", en: "Qutub Minar & Historic Ruins" },
@@ -22,7 +77,7 @@ const GALLERY_ITEMS = [
       es: "«Un momento mágico contemplando el palacio del agua al atardecer en Jaipur con nuestro coche y guía privado.»",
       en: "“A magical moment looking out at the water palace at sunset in Jaipur with our private car & guide.”"
     },
-    guest: "Familia Ramos (Barcelona)"
+    guest: "Carlos & Elena (Málaga)"
   },
   {
     id: "humayun-tomb",
@@ -33,29 +88,29 @@ const GALLERY_ITEMS = [
       es: "«El precursor del Taj Mahal impresiona aún más en persona. Todo organizado con tiempo para disfrutar sin prisa.»",
       en: "“The precursor to the Taj Mahal is even more impressive in person. Everything arranged unhurried.”"
     },
-    guest: "Carlos & Elena (Valencia)"
+    guest: "Javier R. (Zaragoza)"
   },
   {
-    id: "taj-mahal-sunset",
-    img: "/images/gallery/taj-mahal-sunset.jpg",
-    title: { es: "Taj Mahal al Atardecer desde Mehtab Bagh", en: "Taj Mahal at Sunset from Mehtab Bagh" },
-    location: { es: "Agra", en: "Agra" },
+    id: "sadhu-trishul",
+    img: "/images/gallery/sadhu-trishul.jpg",
+    title: { es: "Sadhu con Trishul a Orillas del Ganges", en: "Sadhu with Trishul by the Ganges" },
+    location: { es: "Varanasi", en: "Varanasi" },
     caption: {
-      es: "«Una perspectiva tranquila y distinta del Taj Mahal al atardecer sobre el río Yamuna. Inolvidable.»",
-      en: "“A peaceful, unique perspective of the Taj Mahal at sunset across the Yamuna river. Unforgettable.”"
+      es: "«Capturando la esencia mística del hinduismo a orillas del río sagrado en Varanasi.»",
+      en: "“Capturing the mystical essence of Hinduism on the banks of the sacred river in Varanasi.”"
     },
-    guest: "Sofía G. (Sevilla)"
+    guest: "Marta & Marcos (Alicante)"
   },
   {
-    id: "hawa-mahal",
-    img: "/images/gallery/hawa-mahal.jpg",
-    title: { es: "Hawa Mahal al Anochecer", en: "Hawa Mahal at Dusk" },
-    location: { es: "Jaipur, Rajastán", en: "Jaipur, Rajasthan" },
+    id: "sadhu-dreadlocks",
+    img: "/images/gallery/sadhu-dreadlocks.jpg",
+    title: { es: "Tradición y Misticismo en India", en: "Tradition & Mysticism in India" },
+    location: { es: "Varanasi", en: "Varanasi" },
     caption: {
-      es: "«Los colores del Palacio de los Vientos iluminado al anochecer son deslumbrantes.»",
-      en: "“The colors of the illuminated Palace of Winds at dusk are mesmerizing.”"
+      es: "«Fotografiando momentos únicos de vida y espiritualidad que jamás habríamos descubierto sin un guía local.»",
+      en: "“Photographing unique moments of life and spirituality we would never have discovered without a local guide.”"
     },
-    guest: "David & Laura (Bilbao)"
+    guest: "Hugo & Irene (San Sebastián)"
   }
 ];
 
@@ -90,8 +145,8 @@ export default function GallerySection() {
           </div>
           <p>
             {t({
-              es: "Fotografías reales compartidas por viajeros en sus itinerarios privados por Delhi, Jaipur, Agra y el subcontinente.",
-              en: "Real photographs shared by guests on their private itineraries across Delhi, Jaipur, Agra, and the subcontinent."
+              es: "Fotografías reales e historias compartidas por nuestros viajeros durante sus recorridos privados por India.",
+              en: "Real photographs and stories shared by our travelers during their private tours across India."
             })}
           </p>
         </div>
@@ -100,7 +155,7 @@ export default function GallerySection() {
           {GALLERY_ITEMS.map((item, idx) => (
             <div
               key={item.id}
-              className={`gallery-card gallery-card-${idx + 1}`}
+              className={`gallery-card gallery-card-${(idx % 5) + 1}`}
               onClick={() => setSelectedIdx(idx)}
               role="button"
               tabIndex={0}
