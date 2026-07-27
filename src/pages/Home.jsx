@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { TOURS } from "../data/tours.js";
 import TourCard from "../components/TourCard.jsx";
 import PhotoHeroCluster from "../components/PhotoHeroCluster.jsx";
+import GallerySection from "../components/GallerySection.jsx";
 import useReveal from "../hooks/useReveal.js";
 import { useT } from "../context/LangContext.jsx";
 
@@ -161,6 +162,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <GallerySection />
 
       <section>
         <div className="container">
