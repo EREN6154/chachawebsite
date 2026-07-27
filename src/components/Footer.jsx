@@ -25,11 +25,12 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h5>{t({ es: "Regiones", en: "Regions" })}</h5>
+            <h5>{t({ es: "Regiones & Destinos", en: "Regions & Destinations" })}</h5>
             <ul>
-              <li>{t({ es: "Norte de India", en: "North India" })}</li>
-              <li>{t({ es: "Sur de India", en: "South India" })}</li>
-              <li>{t({ es: "Este de India", en: "East India" })}</li>
+              <li><Link to="/viajes">{t({ es: "India", en: "India" })}</Link></li>
+              <li><Link to="/viajes">{t({ es: "Nepal", en: "Nepal" })}</Link></li>
+              <li><Link to="/viajes">{t({ es: "Bután", en: "Bhutan" })}</Link></li>
+              <li><Link to="/viajes">{t({ es: "Sri Lanka", en: "Sri Lanka" })}</Link></li>
             </ul>
           </div>
           <div>

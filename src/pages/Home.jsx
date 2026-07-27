@@ -12,8 +12,9 @@ export default function Home() {
   const featured = TOURS.slice(0, 3);
   const regionPicks = [
     TOURS.find(t => t.slug === "triangulo-dorado-clasico"),
-    TOURS.find(t => t.slug === "karnataka-tamil-nadu-gran-sur"),
-    TOURS.find(t => t.slug === "odisha-chhattisgarh-tribal")
+    TOURS.find(t => t.slug === "nepal-esencial-katmandu-pokhara"),
+    TOURS.find(t => t.slug === "reino-de-butan-nido-del-tigre"),
+    TOURS.find(t => t.slug === "sri-lanka-isla-esmeralda")
   ];
   const teaserTour = TOURS.find(t => t.slug === "delhi-agra-jaipur-varanasi");
 
@@ -55,8 +56,8 @@ export default function Home() {
             <p style={{ fontSize: 16, color: "#4a4740", marginBottom: 18 }}>
               <strong style={{ color: "var(--indigo)", fontWeight: 500 }}>Viaje India Planeta</strong>{" "}
               {t({
-                es: "nace de 18 años guiando viajeros de habla hispana e inglesa por Delhi, Rajastán, Agra, Varanasi y el sur de India. Cada itinerario está pensado por alguien que ha caminado esas calles cientos de veces — no copiado de un catálogo.",
-                en: "comes from 18 years guiding Spanish and English speaking travelers through Delhi, Rajasthan, Agra, Varanasi and South India. Every itinerary is built by someone who has walked those streets hundreds of times — not copied from a catalog."
+                es: "nace de 18 años guiando viajeros de habla hispana e inglesa por Delhi, Rajastán, Agra, Varanasi, el sur de India, Nepal, Bután y Sri Lanka. Cada itinerario está pensado por alguien que ha caminado esas calles cientos de veces — no copiado de un catálogo.",
+                en: "comes from 18 years guiding Spanish and English speaking travelers through Delhi, Rajasthan, Agra, Varanasi, South India, Nepal, Bhutan, and Sri Lanka. Every itinerary is built by someone who has walked those streets hundreds of times — not copied from a catalog."
               })}
             </p>
             <p style={{ fontSize: 16, color: "#4a4740" }}>
@@ -67,7 +68,7 @@ export default function Home() {
             </p>
             <div className="stat-row">
               <div className="stat"><b>18</b><span>{t({ es: "años de experiencia", en: "years of experience" })}</span></div>
-              <div className="stat"><b>13</b><span>{t({ es: "rutas diseñadas por región", en: "routes designed by region" })}</span></div>
+              <div className="stat"><b>16</b><span>{t({ es: "rutas por región & país", en: "routes by region & country" })}</span></div>
               <div className="stat"><b>100%</b><span>{t({ es: "servicio privado", en: "private service" })}</span></div>
             </div>
           </div>
@@ -121,7 +122,7 @@ export default function Home() {
             <ul>
               {[
                 { es: ["Servicio privado", "Vehículo, guía y ritmo solo para tu grupo — nunca compartido con desconocidos."], en: ["Private service", "Vehicle, guide and pace for your group only — never shared with strangers."] },
-                { es: ["Español nativo", "Guía certificado por el Ministerio de Turismo de India, en español e inglés."], en: ["Native Spanish", "Guide certified by the Ministry of Tourism of India, in Spanish and English."] },
+                { es: ["Español e inglés", "Guía certificado por el Ministerio de Turismo de India, fluido en español e inglés."], en: ["Spanish & English", "Guide certified by the Ministry of Tourism of India, fluent in Spanish and English."] },
                 { es: ["18 años en ruta", "Los mismos hoteles, choferes y contactos de confianza, probados durante casi dos décadas."], en: ["18 years on the road", "The same hotels, drivers and trusted contacts, tested for almost two decades."] },
                 { es: ["Itinerarios reales", "Cada tour de esta web es un recorrido que hemos hecho, no una plantilla genérica."], en: ["Actual itineraries", "Every tour on this website is a route we have taken, not a generic template."] }
               ].map((item, i) => (
@@ -135,10 +136,10 @@ export default function Home() {
           <div className="reveal" style={{ background: "var(--indigo)", color: "var(--ivory)", padding: 40 }}>
             <span className="label" style={{ color: "var(--marigold)" }}>{t({ es: "Tu guía", en: "Your guide" })}</span>
             <h3 style={{ fontSize: 24, margin: "12px 0 6px", color: "var(--ivory)" }}>
-              {t({ es: "Vicky — Guía y escolta turístico", en: "Vicky — Tourist guide and escort" })}
+              {t({ es: "Victor — Guía y escolta turístico", en: "Victor — Tourist guide and escort" })}
             </h3>
             <p style={{ fontSize: 14, color: "rgba(246,240,228,0.7)" }}>
-              {t({ es: "Inglés y español · 18 años de experiencia", en: "English and Spanish · 18 years of experience" })}
+              {t({ es: "Español e inglés · 18 años de experiencia", en: "Spanish and English · 18 years of experience" })}
             </p>
             <p style={{ marginTop: 20, fontSize: 14 }}>vickyguide951@gmail.com</p>
             <p style={{ fontSize: 14 }}>+91 894 945 4247</p>
@@ -150,10 +151,10 @@ export default function Home() {
         <div className="container">
           <div className="section-head reveal">
             <div>
-              <span className="eyebrow">{t({ es: "Regiones", en: "Regions" })}</span>
-              <h2>{t({ es: "Elige tu India", en: "Choose your India" })}</h2>
+              <span className="eyebrow">{t({ es: "Regiones & Destinos", en: "Regions & Destinations" })}</span>
+              <h2>{t({ es: "India, Nepal, Bután y Sri Lanka", en: "India, Nepal, Bhutan & Sri Lanka" })}</h2>
             </div>
-            <p>{t({ es: "Tres universos muy distintos dentro de un mismo país: el norte imperial, el sur de los templos y el este tribal.", en: "Three very different worlds within one country: the imperial north, the temple-filled south, and the tribal east." })}</p>
+            <p>{t({ es: "Cuatro destinos inolvidables del subcontinente diseñados con servicio privado y guía en español e inglés.", en: "Four unforgettable destinations of the subcontinent designed with private service and a Spanish & English speaking guide." })}</p>
           </div>
           <div className="tour-grid">
             {regionPicks.map(tr => <TourCard key={tr.slug} tour={tr} />)}
@@ -193,7 +194,7 @@ export default function Home() {
         <div className="container text-center reveal" style={{ maxWidth: 620 }}>
           <span className="label" style={{ color: "var(--marigold)", display: "block" }}>{t({ es: "¿Empezamos a planear?", en: "Shall we start planning?" })}</span>
           <h2 style={{ marginTop: 18 }}>{t({ es: "Cuéntanos qué buscas y diseñamos el resto.", en: "Tell us what you're looking for and we'll design the rest." })}</h2>
-          <p style={{ marginTop: 18, color: "rgba(246,240,228,0.7)" }}>{t({ es: "Respondemos en español o inglés, con fechas, precios y disponibilidad reales.", en: "We reply in Spanish or English, with real dates, prices and availability." })}</p>
+          <p style={{ marginTop: 18, color: "rgba(246,240,228,0.7)" }}>{t({ es: "Respondemos en español o inglés, con fechas y disponibilidad reales.", en: "We reply in Spanish or English, with real dates and availability." })}</p>
           <div style={{ marginTop: 36, display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <Link to="/contacto" className="btn btn-primary">{t({ es: "Planifica tu viaje", en: "Plan your trip" })}</Link>
             <a href="https://wa.me/918949454247" target="_blank" rel="noopener noreferrer" className="btn btn-on-dark">WhatsApp</a>

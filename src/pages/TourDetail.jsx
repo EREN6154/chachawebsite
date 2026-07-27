@@ -23,7 +23,7 @@ export default function TourDetail() {
   const icon = CARD_ICONS[TOUR_ICON[tour.slug] || "taj"];
   const related = TOURS.filter(tr => tr.slug !== tour.slug && tr.region.es === tour.region.es).slice(0, 3);
   const relatedFinal = related.length ? related : TOURS.filter(tr => tr.slug !== tour.slug).slice(0, 3);
-  const waMsg = `${t({ es: "Hola, me interesa el tour", en: "Hi, I'm interested in the tour" })} "${t(tour.title)}" — ${t({ es: "¿me pueden pasar el precio exacto?", en: "could you send me the exact price?" })}`;
+  const waMsg = `${t({ es: "Hola, me interesa el tour", en: "Hi, I'm interested in the tour" })} "${t(tour.title)}" — ${t({ es: "¿me pueden enviar detalles y disponibilidad?", en: "could you send me details and availability?" })}`;
 
   return (
     <>
@@ -42,7 +42,6 @@ export default function TourDetail() {
           <div className="meta">
             <div><b>{t({ es: "Duración", en: "Duration" })}</b>{tour.duration} {t({ es: "días", en: "days" })} / {tour.nights} {t({ es: "noches", en: "nights" })}</div>
             <div><b>{t({ es: "Ruta", en: "Route" })}</b>{tour.cities.join(" · ")}</div>
-            <div><b>{t({ es: "Precio desde", en: "Price from" })}</b>USD {maskPrice(tour.priceFrom)}</div>
           </div>
           <div style={{ marginTop: 32, display: "flex", gap: 16, flexWrap: "wrap" }}>
             <Link to={`/contacto?tour=${encodeURIComponent(t(tour.title))}`} className="btn btn-primary">
@@ -89,13 +88,12 @@ export default function TourDetail() {
 
           <aside>
             <div className="reveal" style={{ position: "sticky", top: 100, background: "var(--ivory-dim)", border: "1px solid var(--line)", padding: 30 }}>
-              <span className="label" style={{ color: "var(--ink-soft)" }}>{t({ es: "Precio desde", en: "Price from" })}</span>
-              <div style={{ fontFamily: "var(--font-display)", fontSize: 36, margin: "6px 0 4px", color: "var(--indigo)" }}>
-                USD {maskPrice(tour.priceFrom)}
-                <span style={{ fontSize: 14, fontFamily: "var(--font-body)", color: "var(--ink-soft)" }}> / {t({ es: "persona", en: "person" })}</span>
-              </div>
-              <p style={{ fontSize: 13, color: "var(--ink-soft)", marginBottom: 18 }}>
-                {t({ es: "Escríbenos para el precio exacto según fechas y número de viajeros.", en: "Message us for the exact price based on dates and group size." })}
+              <span className="label" style={{ color: "var(--sandstone)" }}>{t({ es: "Servicio Privado", en: "Private Service" })}</span>
+              <h3 style={{ fontSize: 22, margin: "8px 0 12px", color: "var(--indigo)", fontWeight: 500 }}>
+                {t({ es: "Itinerario a medida", en: "Tailor-made itinerary" })}
+              </h3>
+              <p style={{ fontSize: 13.5, color: "var(--ink-soft)", marginBottom: 20, lineHeight: 1.5 }}>
+                {t({ es: "Escríbenos para consultar disponibilidad y recibir tu presupuesto personalizado según tus fechas.", en: "Contact us to check availability and receive a customized quote for your dates." })}
               </p>
               <Link to={`/contacto?tour=${encodeURIComponent(t(tour.title))}`} className="btn btn-dark" style={{ width: "100%", justifyContent: "center", marginBottom: 12 }}>
                 {t({ es: "Solicitar disponibilidad", en: "Check availability" })}

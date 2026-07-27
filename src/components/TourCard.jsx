@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import TourMedia from "./TourMedia.jsx";
 import { useT } from "../context/LangContext.jsx";
-import { maskPrice } from "../utils/priceMask.js";
 
 export default function TourCard({ tour }) {
   const t = useT();
@@ -17,7 +16,9 @@ export default function TourCard({ tour }) {
           {tour.duration} {t({ es: "días", en: "days" })} / {tour.nights} {t({ es: "noches", en: "nights" })}
         </p>
         <div className="tour-card-foot">
-          <div className="tour-card-price"><span>{t({ es: "Desde", en: "From" })}</span><b>USD {maskPrice(tour.priceFrom)}</b></div>
+          <span style={{ fontSize: 13, fontFamily: "var(--font-mono)", color: "var(--sandstone)", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+            {t({ es: "Tour Privado", en: "Private Tour" })}
+          </span>
           <div className="tour-card-arrow">→</div>
         </div>
       </div>

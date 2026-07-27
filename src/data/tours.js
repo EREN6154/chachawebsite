@@ -7,7 +7,7 @@ export const TOURS = [
     slug: "triangulo-dorado-clasico",
     image: "/images/tours/triangulo-dorado-clasico.jpg",
     title: { es: "Triángulo Dorado Clásico", en: "Classic Golden Triangle" },
-    region: { es: "Norte de India", en: "North India" },
+    region: { es: "India · Norte", en: "India · North" },
     duration: 6,
     nights: 5,
     cities: ["Delhi", "Jaipur", "Agra"],
@@ -46,7 +46,7 @@ export const TOURS = [
     slug: "triangulo-dorado-mandawa",
     image: "/images/tours/triangulo-dorado-mandawa.jpg",
     title: { es: "Triángulo Dorado con Mandawa", en: "Golden Triangle with Mandawa" },
-    region: { es: "Norte de India", en: "North India" },
+    region: { es: "India · Norte", en: "India · North" },
     duration: 8,
     nights: 7,
     cities: ["Delhi", "Agra", "Jaipur", "Mandawa"],
@@ -85,7 +85,7 @@ export const TOURS = [
     slug: "triangulo-dorado-ranthambore",
     image: "/images/tours/triangulo-dorado-ranthambore.jpg",
     title: { es: "Triángulo Dorado con Ranthambore", en: "Golden Triangle with Ranthambore" },
-    region: { es: "Norte de India · Vida Salvaje", en: "North India · Wildlife" },
+    region: { es: "India · Norte", en: "India · North" },
     duration: 7,
     nights: 6,
     cities: ["Delhi", "Jaipur", "Ranthambore", "Agra"],
@@ -125,7 +125,7 @@ export const TOURS = [
     slug: "triangulo-dorado-khajuraho-varanasi",
     image: "/images/tours/triangulo-dorado-khajuraho-varanasi.jpg",
     title: { es: "Triángulo Dorado con Khajuraho y Varanasi", en: "Golden Triangle with Khajuraho and Varanasi" },
-    region: { es: "Norte de India · Espiritual", en: "North India · Spiritual" },
+    region: { es: "India · Norte", en: "India · North" },
     duration: 10,
     nights: 9,
     cities: ["Delhi", "Jaipur", "Agra", "Orchha", "Khajuraho", "Varanasi"],
@@ -168,7 +168,7 @@ export const TOURS = [
     slug: "delhi-agra-jaipur-varanasi",
     image: "/images/tours/delhi-agra-jaipur-varanasi.jpg",
     title: { es: "Triángulo Dorado con Varanasi", en: "Golden Triangle with Varanasi" },
-    region: { es: "Norte de India · Espiritual", en: "North India · Spiritual" },
+    region: { es: "India · Norte", en: "India · North" },
     duration: 9,
     nights: 8,
     cities: ["Delhi", "Jaipur", "Agra", "Varanasi"],
@@ -213,7 +213,7 @@ export const TOURS = [
     slug: "golden-triangle-culture-tour",
     image: "/images/tours/golden-triangle-culture-tour.jpg",
     title: { es: "Golden Triangle & Cultura", en: "Golden Triangle & Culture" },
-    region: { es: "Norte de India · Espiritual", en: "North India · Spiritual" },
+    region: { es: "India · Norte", en: "India · North" },
     duration: 11,
     nights: 10,
     cities: ["Delhi", "Jaipur", "Abhaneri", "Fatehpur Sikri", "Agra", "Khajuraho", "Varanasi"],
@@ -257,7 +257,7 @@ export const TOURS = [
     slug: "royal-rajasthan",
     image: "/images/tours/royal-rajasthan.jpg",
     title: { es: "Royal Rajasthan", en: "Royal Rajasthan" },
-    region: { es: "Rajastán · Gran Circuito", en: "Rajasthan · Grand Circuit" },
+    region: { es: "India · Rajastán", en: "India · Rajasthan" },
     duration: 13,
     nights: 12,
     cities: ["Delhi", "Mandawa", "Bikaner", "Jaisalmer", "Jodhpur", "Udaipur", "Jaipur", "Agra"],
@@ -303,7 +303,7 @@ export const TOURS = [
     slug: "mini-rajasthan",
     image: "/images/tours/mini-rajasthan.jpg",
     title: { es: "Mini Rajastán", en: "Mini Rajasthan" },
-    region: { es: "Rajastán", en: "Rajasthan" },
+    region: { es: "India · Rajastán", en: "India · Rajasthan" },
     duration: 9,
     nights: 8,
     cities: ["Delhi", "Udaipur", "Jodhpur", "Jaipur", "Agra"],
@@ -345,7 +345,7 @@ export const TOURS = [
     slug: "lo-mejor-de-la-india",
     image: "/images/tours/lo-mejor-de-la-india.jpg",
     title: { es: "Lo Mejor de la India", en: "The Best of India" },
-    region: { es: "Norte de India", en: "North India" },
+    region: { es: "India · Norte", en: "India · North" },
     duration: 7,
     nights: 6,
     cities: ["Delhi", "Mandawa", "Jaipur", "Agra"],
@@ -385,7 +385,7 @@ export const TOURS = [
     slug: "karnataka-tamil-nadu-gran-sur",
     image: "/images/tours/karnataka-tamil-nadu-gran-sur.jpg",
     title: { es: "Karnataka & Tamil Nadu: Gran Sur", en: "Karnataka & Tamil Nadu: Grand South" },
-    region: { es: "Sur de India", en: "South India" },
+    region: { es: "India · Sur", en: "India · South" },
     duration: 16,
     nights: 15,
     cities: ["Bangalore", "Mysore", "Chennai", "Mahabalipuram", "Thanjavur", "Madurai", "Periyar", "Alleppey", "Kochi"],
@@ -436,7 +436,7 @@ export const TOURS = [
     slug: "sur-de-india-clasico",
     image: "/images/tours/sur-de-india-clasico.jpg",
     title: { es: "Sur de India Clásico", en: "Classic South India" },
-    region: { es: "Sur de India", en: "South India" },
+    region: { es: "India · Sur", en: "India · South" },
     duration: 11,
     nights: 10,
     cities: ["Chennai", "Mahabalipuram", "Pondicherry", "Thanjavur", "Madurai", "Thekkady", "Kumarakom", "Cochin"],
@@ -479,7 +479,7 @@ export const TOURS = [
     slug: "la-danza-de-shiva",
     image: "/images/tours/la-danza-de-shiva.jpg",
     title: { es: "La Danza de Shiva", en: "The Dance of Shiva" },
-    region: { es: "Sur de India · Espiritual", en: "South India · Spiritual" },
+    region: { es: "India · Sur", en: "India · South" },
     duration: 12,
     nights: 11,
     cities: ["Chennai", "Pondicherry", "Tanjore", "Chettinadu", "Madurai", "Periyar", "Alleppey", "Cochin"],
@@ -524,7 +524,7 @@ export const TOURS = [
     slug: "odisha-chhattisgarh-tribal",
     image: "/images/tours/odisha-chhattisgarh-tribal.jpg",
     title: { es: "Odisha & Chhattisgarh: Patrimonio Tribal y Fauna", en: "Odisha & Chhattisgarh: Tribal Heritage and Wildlife" },
-    region: { es: "Este de India · Tribal & Vida Salvaje", en: "East India · Tribal & Wildlife" },
+    region: { es: "India · Este", en: "India · East" },
     duration: 11,
     nights: 10,
     cities: ["Bhubaneswar", "Puri", "Gopalpur", "Rayagada", "Jeypore", "Jagdalpur", "Kondagaon", "Raipur", "Kanha"],
@@ -564,9 +564,134 @@ export const TOURS = [
       { d: 10, title: { es: "Kanha: safari mañana y tarde", en: "Kanha: morning and evening safari" }, text: { es: "Dos safaris en jeep en busca de tigres, leopardos, osos perezosos y grandes manadas de ciervos.", en: "Two jeep safaris in search of tigers, leopards, sloth bears and large herds of deer." } },
       { d: 11, title: { es: "Kanha – Raipur – Delhi", en: "Kanha – Raipur – Delhi" }, text: { es: "Traslado y vuelo de regreso a Delhi para la conexión internacional.", en: "Transfer and flight back to Delhi for the international connection." } }
     ]
+  },
+  {
+    slug: "nepal-esencial-katmandu-pokhara",
+    image: "/images/tours/nepal-esencial-katmandu-pokhara.jpg",
+    title: { es: "Nepal Esencial & Pokhara", en: "Essential Nepal & Pokhara" },
+    region: { es: "Nepal", en: "Nepal" },
+    duration: 8,
+    nights: 7,
+    cities: ["Kathmandu", "Bhaktapur", "Pokhara", "Nagarkot"],
+    tagline: {
+      es: "Valles sagrados, estupas budistas y vistas panorámicas del macizo del Annapurna.",
+      en: "Sacred valleys, Buddhist stupas and panoramic views of the Annapurna range."
+    },
+    priceFrom: 1250,
+    highlights: [
+      { es: "Estupa de Swayambhunath y Pashupatinath", en: "Swayambhunath Stupa and Pashupatinath Temple" },
+      { es: "Plaza Durbar de Bhaktapur y Patan", en: "Bhaktapur and Patan Durbar Squares" },
+      { es: "Amanecer sobre el Himalaya desde Nagarkot", en: "Sunrise over the Himalayas from Nagarkot" },
+      { es: "Paseo en barca por el lago Phewa en Pokhara", en: "Boat ride on Lake Phewa in Pokhara" }
+    ],
+    includes: [
+      { es: "Alojamiento con desayuno", en: "Accommodation with breakfast" },
+      { es: "Traslados privados con aire acondicionado", en: "Private air-conditioned transfers" },
+      { es: "Guía de habla hispana en Katmandú y Pokhara", en: "Spanish-speaking guide in Kathmandu and Pokhara" },
+      { es: "Paseo en barco en Pokhara", en: "Boat ride in Pokhara" }
+    ],
+    excludes: [
+      { es: "Vuelos internacionales y visado de entrada", en: "International flights and entry visa" },
+      { es: "Seguro de viaje", en: "Travel insurance" },
+      { es: "Gastos personales", en: "Personal expenses" }
+    ],
+    days: [
+      { d: 1, title: { es: "Llegada a Katmandú", en: "Arrival in Kathmandu" }, text: { es: "Recepción en el aeropuerto de Katmandú, bienvenida tradicional nepalí y traslado al hotel.", en: "Reception at Kathmandu airport, traditional Nepalese welcome and transfer to the hotel." } },
+      { d: 2, title: { es: "Katmandú y Swayambhunath", en: "Kathmandu & Swayambhunath" }, text: { es: "Visita a la Plaza Durbar de Katmandú, la residencia de la diosa viviente Kumari y el templo de los monos de Swayambhunath.", en: "Visit to Kathmandu Durbar Square, the residence of the living goddess Kumari, and the Swayambhunath monkey temple." } },
+      { d: 3, title: { es: "Pashupatinath y Boudhanath", en: "Pashupatinath & Boudhanath" }, text: { es: "El templo hinduista de Pashupatinath a orillas del río Bagmati y la gran estupa de Boudhanath, centro del budismo tibetano.", en: "The Hindu temple of Pashupatinath on the banks of the Bagmati river and the great Boudhanath stupa, center of Tibetan Buddhism." } },
+      { d: 4, title: { es: "Katmandú – Pokhara", en: "Kathmandu – Pokhara" }, text: { es: "Traslado escénico a Pokhara, la puerta de entrada a los Annapurnas. Tarde libre junto al lago Phewa.", en: "Scenic transfer to Pokhara, gateway to the Annapurnas. Free afternoon by Lake Phewa." } },
+      { d: 5, title: { es: "Amanecer en Sarangkot & Pokhara", en: "Sarangkot Sunrise & Pokhara" }, text: { es: "Amanecer en Sarangkot con vistas a los picos del Annapurna y Machhapuchhre. Por la tarde, cueva de Gupteshwor y paseo en barca.", en: "Sunrise at Sarangkot with views of Annapurna and Machhapuchhre peaks. In the afternoon, Gupteshwor cave and boat ride." } },
+      { d: 6, title: { es: "Pokhara – Nagarkot", en: "Pokhara – Nagarkot" }, text: { es: "Regreso hacia el valle de Katmandú y subida al pueblo de montaña de Nagarkot.", en: "Return towards Kathmandu Valley and ascent to the mountain village of Nagarkot." } },
+      { d: 7, title: { es: "Nagarkot – Bhaktapur – Katmandú", en: "Nagarkot – Bhaktapur – Kathmandu" }, text: { es: "Amanecer con panorámica de la cordillera del Himalaya y visita a la ciudad medieval amurallada de Bhaktapur.", en: "Sunrise with a view of the Himalayan range and visit to the walled medieval city of Bhaktapur." } },
+      { d: 8, title: { es: "Katmandú – Salida", en: "Kathmandu – Departure" }, text: { es: "Traslado al aeropuerto internacional para el vuelo de regreso.", en: "Transfer to the international airport for the flight home." } }
+    ]
+  },
+  {
+    slug: "reino-de-butan-nido-del-tigre",
+    image: "/images/tours/reino-de-butan-nido-del-tigre.jpg",
+    title: { es: "Reino de Bután: El Nido del Tigre", en: "Kingdom of Bhutan: Tiger's Nest" },
+    region: { es: "Bután", en: "Bhutan" },
+    duration: 7,
+    nights: 6,
+    cities: ["Paro", "Thimphu", "Punakha"],
+    tagline: {
+      es: "El reino de la Felicidad Nacional Bruta, dzongs fortalezas y el legendario monasterio Taktsang.",
+      en: "The kingdom of Gross National Happiness, fortress dzongs and the legendary Taktsang monastery."
+    },
+    priceFrom: 2150,
+    highlights: [
+      { es: "Caminata al monasterio Taktsang (El Nido del Tigre)", en: "Hike to Taktsang Monastery (Tiger's Nest)" },
+      { es: "Punakha Dzong en la confluencia de los ríos Mo y Pho", en: "Punakha Dzong at the confluence of the Mo and Pho rivers" },
+      { es: "Estatua del Buda Dordenma en Thimphu", en: "Buddha Dordenma statue in Thimphu" },
+      { es: "Paso de montaña Dochula con sus 108 estupas", en: "Dochula Mountain Pass with its 108 stupas" }
+    ],
+    includes: [
+      { es: "Tasa de desarrollo sostenible (SDF) del gobierno de Bután", en: "Bhutan government Sustainable Development Fee (SDF)" },
+      { es: "Pensión completa durante todo el circuito", en: "Full board for the entire trip" },
+      { es: "Guía privado de parla hispana o inglés", en: "Private Spanish or English-speaking guide" },
+      { es: "Transporte privado y entradas", en: "Private transport and entrance fees" }
+    ],
+    excludes: [
+      { es: "Vuelos internacionales hasta Paro", en: "International flights to Paro" },
+      { es: "Seguro de viaje obligatorio", en: "Mandatory travel insurance" },
+      { es: "Gastos personales", en: "Personal expenses" }
+    ],
+    days: [
+      { d: 1, title: { es: "Llegada a Paro – Thimphu", en: "Arrival in Paro – Thimphu" }, text: { es: "Vuelo espectacular sobre el Himalaya hacia Paro. Recepción y traslado a Thimphu, la capital sin semáforos.", en: "Spectacular flight over the Himalayas to Paro. Reception and transfer to Thimphu, the capital without traffic lights." } },
+      { d: 2, title: { es: "Explorando Thimphu", en: "Exploring Thimphu" }, text: { es: "Gran Buda Dordenma, Tashichho Dzong, el Chorten Conmemorativo Nacional y la reserva del Takin.", en: "Great Buddha Dordenma, Tashichho Dzong, National Memorial Chorten and Takin reserve." } },
+      { d: 3, title: { es: "Thimphu – Paso Dochula – Punakha", en: "Thimphu – Dochula Pass – Punakha" }, text: { es: "Cruce del paso Dochula (3.100 m) con vistas al Himalaya y llegada al cálido valle de Punakha.", en: "Crossing Dochula Pass (3,100 m) with views of the Himalayas and arrival in the warm Punakha valley." } },
+      { d: 4, title: { es: "Punakha & Chimi Lhakhang", en: "Punakha & Chimi Lhakhang" }, text: { es: "El majestuoso Punakha Dzong entre dos ríos y caminata por los campos de arroz hacia el templo de la fertilidad Chimi Lhakhang.", en: "Majestic Punakha Dzong between two rivers and a hike through rice fields to Chimi Lhakhang fertility temple." } },
+      { d: 5, title: { es: "Punakha – Paro", en: "Punakha – Paro" }, text: { es: "Regreso a Paro y visita al Museo Nacional (Ta Dzong) y al Rinpung Dzong.", en: "Return to Paro and visit the National Museum (Ta Dzong) and Rinpung Dzong." } },
+      { d: 6, title: { es: "Monasterio El Nido del Tigre (Taktsang)", en: "Tiger's Nest Monastery (Taktsang)" }, text: { es: "Inolvidable caminata colgada del acantilado al monasterio Taktsang, el lugar sagrado más icónico de Bután.", en: "Unforgettable cliffside hike to Taktsang Monastery, Bhutan's most iconic sacred site." } },
+      { d: 7, title: { es: "Paro – Salida", en: "Paro – Departure" }, text: { es: "Traslado al aeropuerto de Paro para el vuelo de regreso.", en: "Transfer to Paro airport for the return flight." } }
+    ]
+  },
+  {
+    slug: "sri-lanka-isla-esmeralda",
+    image: "/images/tours/sri-lanka-isla-esmeralda.jpg",
+    title: { es: "Sri Lanka: La Isla Esmeralda", en: "Sri Lanka: The Emerald Isle" },
+    region: { es: "Sri Lanka", en: "Sri Lanka" },
+    duration: 10,
+    nights: 9,
+    cities: ["Colombo", "Sigiriya", "Kandy", "Nuwara Eliya", "Galle"],
+    tagline: {
+      es: "La roca sagrada de Sigiriya, templos milenarios, campos de té y la fortaleza fortificada de Galle.",
+      en: "The sacred rock of Sigiriya, ancient temples, tea plantations and Galle's fortified citadel."
+    },
+    priceFrom: 1680,
+    highlights: [
+      { es: "Ascenso a la Fortaleza en la Roca de Sigiriya", en: "Ascent to Sigiriya Rock Fortress" },
+      { es: "Templo del Diente Sagrado de Buda en Kandy", en: "Temple of the Sacred Tooth Relic in Kandy" },
+      { es: "Tren panorámico entre campos de té de Nuwara Eliya", en: "Panoramic train ride through Nuwara Eliya tea fields" },
+      { es: "Fuerte holandés colonial de Galle a orillas del océano", en: "Dutch colonial Fort of Galle by the ocean" }
+    ],
+    includes: [
+      { es: "Alojamiento en hoteles seleccionados con media pensión", en: "Accommodation in selected hotels on half board" },
+      { es: "Chofer-guía privado en español durante todo el viaje", en: "Private Spanish-speaking driver-guide throughout the trip" },
+      { es: "Billete de tren panorámico en zona de montaña", en: "Panoramic mountain train ticket" },
+      { es: "Entradas a Sigiriya, Dambulla, Kandy y Galle", en: "Entrance fees to Sigiriya, Dambulla, Kandy and Galle" }
+    ],
+    excludes: [
+      { es: "Vuelos internacionales", en: "International flights" },
+      { es: "Visado de entrada (ETA)", en: "Entry visa (ETA)" },
+      { es: "Gastos personales y propinas", en: "Personal expenses and tips" }
+    ],
+    days: [
+      { d: 1, title: { es: "Llegada a Colombo – Dambulla", en: "Arrival in Colombo – Dambulla" }, text: { es: "Recepción en el aeropuerto internacional de Colombo y traslado a la zona cultural de Dambulla.", en: "Reception at Colombo international airport and transfer to the cultural region of Dambulla." } },
+      { d: 2, title: { es: "Fortaleza de Sigiriya & Polonnaruwa", en: "Sigiriya Fortress & Polonnaruwa" }, text: { es: "Ascenso matutino a la mítica Roca del León de Sigiriya y visita por la tarde a la antigua capital medieval de Polonnaruwa.", en: "Morning ascent to the mythical Lion Rock of Sigiriya and afternoon visit to the medieval capital of Polonnaruwa." } },
+      { d: 3, title: { es: "Cuevas de Dambulla – Jardín de Especias – Kandy", en: "Dambulla Caves – Spice Garden – Kandy" }, text: { es: "Los templos rupestres de Dambulla decorados con imágenes de Buda, visita a un jardín de especias y llegada a Kandy.", en: "Dambulla cave temples decorated with Buddha statues, visit to a spice garden and arrival in Kandy." } },
+      { d: 4, title: { es: "Explorando Kandy", en: "Exploring Kandy" }, text: { es: "Templo del Diente de Buda, Jardines Botánicos Reales de Peradeniya y espectáculo de danzas tradicionales de Sri Lanka.", en: "Temple of the Sacred Tooth Relic, Royal Botanical Gardens of Peradeniya and traditional Sri Lankan dance show." } },
+      { d: 5, title: { es: "Kandy – Tren de montaña – Nuwara Eliya", en: "Kandy – Mountain Train – Nuwara Eliya" }, text: { es: "Trayecto inolvidable en tren entre colinas verdes y plantaciones de té hacia la colonial 'Pequeña Inglaterra'.", en: "Unforgettable train ride between green hills and tea plantations towards colonial 'Little England'." } },
+      { d: 6, title: { es: "Nuwara Eliya – Fábrica de Té – Yala", en: "Nuwara Eliya – Tea Factory – Yala" }, text: { es: "Visita y degustación en una fábrica de té ceilán y descenso hacia el sur bordeando cascadas hasta el Parque Nacional Yala.", en: "Visit and tasting at a Ceylon tea factory and descent south past waterfalls to Yala National Park." } },
+      { d: 7, title: { es: "Safari en Yala – Mirissa / Galle", en: "Yala Safari – Mirissa / Galle" }, text: { es: "Safari matutino en jeep en Yala en busca de leopardos y elefantes salvajes, y ruta costera hasta Galle.", en: "Morning jeep safari in Yala in search of leopards and wild elephants, and coastal route to Galle." } },
+      { d: 8, title: { es: "Fuerte Colonial de Galle", en: "Galle Colonial Fort" }, text: { es: "Paseo por la ciudad amurallada de Galle, Patrimonio de la Humanidad por la UNESCO, con sus faros, murallas y cafés.", en: "Walk through the walled city of Galle, a UNESCO World Heritage Site, with its lighthouse, ramparts and cafes." } },
+      { d: 9, title: { es: "Galle – Colombo", en: "Galle – Colombo" }, text: { es: "Ruta costera a Colombo y visita panorámica por la capital: el fuerte, la zona colonial y el templo Seema Malaka.", en: "Coastal route to Colombo and panoramic city tour of the capital: the fort, colonial area and Seema Malaka temple." } },
+      { d: 10, title: { es: "Colombo – Salida", en: "Colombo – Departure" }, text: { es: "Traslado al aeropuerto para el vuelo internacional.", en: "Transfer to the airport for the international flight." } }
+    ]
   }
 ];
 
 export function getTourBySlug(slug) {
   return TOURS.find(t => t.slug === slug);
 }
+

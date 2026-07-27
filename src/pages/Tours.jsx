@@ -14,9 +14,12 @@ export default function Tours() {
 
   // Use the Spanish text as a stable key so filtering doesn't reset when the language toggle changes.
   const regionOptions = useMemo(() => {
-    const seen = new Map();
-    TOURS.forEach(tr => { if (!seen.has(tr.region.es)) seen.set(tr.region.es, tr.region); });
-    return [...seen.values()];
+    return [
+      { es: "India", en: "India" },
+      { es: "Nepal", en: "Nepal" },
+      { es: "Bután", en: "Bhutan" },
+      { es: "Sri Lanka", en: "Sri Lanka" }
+    ];
   }, []);
 
   const filtered = useMemo(() => {
@@ -29,7 +32,7 @@ export default function Tours() {
         t(tr.region).toLowerCase().includes(q)
       );
     }
-    if (regionKey !== "all") list = list.filter(tr => tr.region.es === regionKey);
+    if (regionKey !== "all") list = list.filter(tr => tr.region.es.includes(regionKey));
     if (duration !== "all") {
       const [min, max] = duration.split("-").map(Number);
       list = list.filter(tr => tr.duration >= min && tr.duration <= (max || 999));

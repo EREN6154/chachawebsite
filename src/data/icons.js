@@ -26,7 +26,10 @@ export const TOUR_ICON = {
   "karnataka-tamil-nadu-gran-sur": "palace",
   "sur-de-india-clasico": "backwater",
   "la-danza-de-shiva": "palace",
-  "odisha-chhattisgarh-tribal": "tribal"
+  "odisha-chhattisgarh-tribal": "tribal",
+  "nepal-esencial-katmandu-pokhara": "ghat",
+  "reino-de-butan-nido-del-tigre": "palace",
+  "sri-lanka-isla-esmeralda": "backwater"
 };
 
 const GRADIENTS = [
