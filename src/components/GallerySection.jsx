@@ -4,6 +4,28 @@ import useReveal from "../hooks/useReveal.js";
 
 const GALLERY_ITEMS = [
   {
+    id: "ganesh-pol-amber-group",
+    img: "/images/gallery/ganesh-pol-amber-group.jpg",
+    title: { es: "Gran Grupo de Viajeros en Ganesh Pol", en: "Large Group of Travelers at Ganesh Pol" },
+    location: { es: "Fuerte Amber, Jaipur", en: "Amber Fort, Jaipur" },
+    caption: {
+      es: "«Todo nuestro grupo reunido en la escalinata de Ganesh Pol con Victor. ¡Una experiencia inolvidable!»",
+      en: "“Our entire group gathered on the steps of Ganesh Pol with Victor. An unforgettable experience!”"
+    },
+    guest: "Grupo de Viajeros (España)"
+  },
+  {
+    id: "holi-festival-spain-flag",
+    img: "/images/gallery/holi-festival-spain-flag.jpg",
+    title: { es: "Festival de Holi con la Bandera de España", en: "Holi Festival with the Flag of Spain" },
+    location: { es: "Jaipur, Rajastán", en: "Jaipur, Rajasthan" },
+    caption: {
+      es: "«Celebrar el festival de los colores con la bandera española desplegada junto a Victor y amigos locales.»",
+      en: "“Celebrating the festival of colors displaying the Spanish flag with Victor and local friends.”"
+    },
+    guest: "Viajeros de Madrid & Valencia"
+  },
+  {
     id: "victor-india-gate",
     img: "/images/gallery/victor-india-gate.jpg",
     title: { es: "Victor con Viajero en Puerta de la India", en: "Victor with Traveler at India Gate" },
@@ -13,6 +35,39 @@ const GALLERY_ITEMS = [
       en: "“Starting our Delhi adventure with Victor in front of the iconic India Gate monument.”"
     },
     guest: "Javier M. (Madrid)"
+  },
+  {
+    id: "victor-orchha-group",
+    img: "/images/gallery/victor-orchha-group.jpg",
+    title: { es: "Explorando los Palacios de Orchha con Victor", en: "Exploring Orchha Palaces with Victor" },
+    location: { es: "Orchha, Madhya Pradesh", en: "Orchha, Madhya Pradesh" },
+    caption: {
+      es: "«Recorriendo la histórica fortaleza y palacios de Orchha junto a Victor en un ambiente muy cercano.»",
+      en: "“Touring the historical fortress and palaces of Orchha with Victor in a warm personal setting.”"
+    },
+    guest: "Grupo de Viajeras (Barcelona & Sevilla)"
+  },
+  {
+    id: "khajuraho-temples-group",
+    img: "/images/gallery/khajuraho-temples-group.jpg",
+    title: { es: "Grupo frente a los Templos de Khajuraho", en: "Group in front of Khajuraho Temples" },
+    location: { es: "Khajuraho, Madhya Pradesh", en: "Khajuraho, Madhya Pradesh" },
+    caption: {
+      es: "«Contemplar la arquitectura milenaria y esculturas de Khajuraho explicadas al detalle por nuestro guía Victor.»",
+      en: "“Contemplating ancient architecture and sculptures of Khajuraho explained in detail by Victor.”"
+    },
+    guest: "Familia & Amigos (Madrid)"
+  },
+  {
+    id: "orchha-tomb-selfie",
+    img: "/images/gallery/orchha-tomb-selfie.jpg",
+    title: { es: "Selfie en los Cenotafios Reales de Orchha", en: "Selfie at Royal Cenotaphs of Orchha" },
+    location: { es: "Orchha", en: "Orchha" },
+    caption: {
+      es: "«Recuerdos inolvidables frente a las majestuosas cúpulas históricas de Orchha.»",
+      en: "“Unforgettable memories in front of the majestic historical domes of Orchha.”"
+    },
+    guest: "Antonio & Grupo (Valencia)"
   },
   {
     id: "victor-jaipur-group",
@@ -79,17 +134,6 @@ const GALLERY_ITEMS = [
       en: "“Victor guiding us and sharing the authentic cultural and artistic wealth of the Indian subcontinent.”"
     },
     guest: "Victor — Guía Certificado"
-  },
-  {
-    id: "traveler-namaste-taj",
-    img: "/images/gallery/traveler-namaste-taj.png",
-    title: { es: "Namaste en el Taj Mahal", en: "Namaste at the Taj Mahal" },
-    location: { es: "Agra, Uttar Pradesh", en: "Agra, Uttar Pradesh" },
-    caption: {
-      es: "«Un instante de paz y respeto luciendo ropa tradicional india frente al mausoleo del amor eterno.»",
-      en: "“A moment of peace and respect wearing traditional Indian clothing in front of the mausoleum of eternal love.”"
-    },
-    guest: "Camila R. (Madrid)"
   },
   {
     id: "painted-arches-jaipur",
@@ -425,7 +469,7 @@ export default function GallerySection() {
                   alt={t(item.title)}
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = "/images/gallery/victor-india-gate.jpg";
+                    e.target.src = "/images/gallery/ganesh-pol-amber-group.jpg";
                   }}
                 />
                 <div className="gallery-card-overlay">
@@ -479,7 +523,14 @@ export default function GallerySection() {
 
             <div className="gallery-modal-body">
               <div className="gallery-modal-image-wrap">
-                <img src={activeItem.img} alt={t(activeItem.title)} />
+                <img
+                  src={activeItem.img}
+                  alt={t(activeItem.title)}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "/images/gallery/ganesh-pol-amber-group.jpg";
+                  }}
+                />
               </div>
               <div className="gallery-modal-info">
                 <span className="eyebrow" style={{ color: "var(--marigold-soft)" }}>{t(activeItem.location)}</span>
