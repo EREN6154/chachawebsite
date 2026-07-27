@@ -360,6 +360,7 @@ const GALLERY_ITEMS = [
 export default function GallerySection() {
   const t = useT();
   useReveal();
+  const [showAll, setShowAll] = useState(false);
   const [selectedIdx, setSelectedIdx] = useState(null);
 
   useEffect(() => {
@@ -374,6 +375,7 @@ export default function GallerySection() {
   }, [selectedIdx]);
 
   const activeItem = selectedIdx !== null ? GALLERY_ITEMS[selectedIdx] : null;
+  const visibleItems = showAll ? GALLERY_ITEMS : GALLERY_ITEMS.slice(0, 3);
 
   return (
     <section className="section-cream">
@@ -396,10 +398,10 @@ export default function GallerySection() {
         </div>
 
         <div className="gallery-grid">
-          {GALLERY_ITEMS.map((item, idx) => (
+          {visibleItems.map((item, idx) => (
             <div
               key={item.id}
-              className={`gallery-card gallery-card-${(idx % 5) + 1}`}
+              className="gallery-card"
               onClick={() => setSelectedIdx(idx)}
               role="button"
               tabIndex={0}
@@ -414,6 +416,18 @@ export default function GallerySection() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div style={{ marginTop: 32, textAlign: "center" }}>
+          <button
+            className="btn btn-outline"
+            onClick={() => setShowAll(!showAll)}
+            style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 28px", cursor: "pointer" }}
+          >
+            {showAll
+              ? t({ es: "Mostrar menos fotos ↑", en: "Show fewer photos ↑" })
+              : t({ es: `Ver todas las fotos (${GALLERY_ITEMS.length}) →`, en: `View all photos (${GALLERY_ITEMS.length}) →` })}
+          </button>
         </div>
       </div>
 
