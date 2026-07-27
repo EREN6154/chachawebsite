@@ -3,6 +3,28 @@ import { useT } from "../context/LangContext.jsx";
 
 const GALLERY_ITEMS = [
   {
+    id: "patrika-gate-jaipur",
+    img: "/images/gallery/patrika-gate-jaipur.jpg",
+    title: { es: "Puerta de Patrika y Reflejo en Jaipur", en: "Patrika Gate & Reflection in Jaipur" },
+    location: { es: "Jaipur, Rajastán", en: "Jaipur, Rajasthan" },
+    caption: {
+      es: "«La célebre fachada rosa de Patrika Gate reflejada perfectamente en el agua. Fotografía impresionante en Jaipur.»",
+      en: "“The famous pink facade of Patrika Gate reflected perfectly in the water. Stunning photography in Jaipur.”"
+    },
+    guest: "Alba & Sergio (Barcelona)"
+  },
+  {
+    id: "rajasthan-folk-dancers",
+    img: "/images/gallery/rajasthan-folk-dancers.jpg",
+    title: { es: "Danzas Folclóricas de Rajastán", en: "Rajasthani Folk Dancers" },
+    location: { es: "Palacio de Jaipur", en: "Jaipur City Palace" },
+    caption: {
+      es: "«Bailarines tradicionales celebrando con turbantes y cascabeles en las puertas del palacio durante las fiestas de Rajastán.»",
+      en: "“Traditional dancers celebrating with turbans and ankle bells at the palace gates during Rajasthani festivals.”"
+    },
+    guest: "Gonzalo & Patricia (Madrid)"
+  },
+  {
     id: "saree-group-taj",
     img: "/images/gallery/saree-group-taj.jpg",
     title: { es: "Vestidas de Sarees en el Taj Mahal", en: "Dressed in Sarees at the Taj Mahal" },
@@ -23,6 +45,28 @@ const GALLERY_ITEMS = [
       en: "“Our group exploring the majestic Jama Masjid mosque with Victor. A private and unforgettable experience together.”"
     },
     guest: "Grupo de Viajeros (España)"
+  },
+  {
+    id: "rajasthan-musician-bagpipe",
+    img: "/images/gallery/rajasthan-musician-bagpipe.jpg",
+    title: { es: "Música Tradicional Mashak", en: "Traditional Mashak Music" },
+    location: { es: "Rajastán", en: "Rajasthan" },
+    caption: {
+      es: "«Músicos locales tocando la gaita tradicional de Rajastán vestidos de gala festiva dorada.»",
+      en: "“Local musicians playing traditional Rajasthani bagpipes dressed in golden festive regalia.”"
+    },
+    guest: "Laura & Miguel (Sevilla)"
+  },
+  {
+    id: "gangaur-idol-procession",
+    img: "/images/gallery/gangaur-idol-procession.jpg",
+    title: { es: "Procesión de la Diosa Gauri", en: "Procession of Goddess Gauri" },
+    location: { es: "Festival Gangaur, Jaipur", en: "Gangaur Festival, Jaipur" },
+    caption: {
+      es: "«La sagrada imagen de la diosa bellamente adornada con guirnaldas de flores en la gran procesión real de Gangaur.»",
+      en: "“The sacred image of the goddess beautifully adorned with flower garlands in the royal Gangaur procession.”"
+    },
+    guest: "Familia Jiménez (Valencia)"
   },
   {
     id: "gangaur-female-traveler",
