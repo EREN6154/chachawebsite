@@ -3,6 +3,17 @@ import { useT } from "../context/LangContext.jsx";
 
 const GALLERY_ITEMS = [
   {
+    id: "saree-group-taj",
+    img: "/images/gallery/saree-group-taj.jpg",
+    title: { es: "Vestidas de Sarees en el Taj Mahal", en: "Dressed in Sarees at the Taj Mahal" },
+    location: { es: "Agra, Uttar Pradesh", en: "Agra, Uttar Pradesh" },
+    caption: {
+      es: "«Vivir la experiencia de vestir sarees tradicionales indios frente al majestuoso Taj Mahal junto a nuestro grupo.»",
+      en: "“Experiencing wearing traditional Indian sarees in front of the majestic Taj Mahal with our group.”"
+    },
+    guest: "Grupo de Amigas (Madrid & Barcelona)"
+  },
+  {
     id: "group-jama-masjid",
     img: "/images/gallery/group-jama-masjid.jpg",
     title: { es: "Grupo de Viajeros en Jama Masjid", en: "Travel Group at Jama Masjid" },
@@ -14,6 +25,28 @@ const GALLERY_ITEMS = [
     guest: "Grupo de Viajeros (España)"
   },
   {
+    id: "gangaur-female-traveler",
+    img: "/images/gallery/gangaur-female-traveler.jpg",
+    title: { es: "Celebrando el Festival Gangaur", en: "Celebrating Gangaur Festival" },
+    location: { es: "Jaipur, Rajastán", en: "Jaipur, Rajasthan" },
+    caption: {
+      es: "«Sumergirse en el colorido festival de Gangaur en Jaipur. Las tradiciones de Rajastán son fascinantes.»",
+      en: "“Immersing ourselves in the colorful Gangaur festival in Jaipur. Rajasthan's traditions are mesmerizing.”"
+    },
+    guest: "Elena P. (Sevilla)"
+  },
+  {
+    id: "golden-temple-amritsar",
+    img: "/images/gallery/golden-temple-amritsar.jpg",
+    title: { es: "Templo Dorado (Harmandir Sahib)", en: "Golden Temple (Harmandir Sahib)" },
+    location: { es: "Amritsar, Punjab", en: "Amritsar, Punjab" },
+    caption: {
+      es: "«La serenidad y el brillo dorado reflejado en las aguas sagradas del Sarovar en Amritsar es inolvidable.»",
+      en: "“The serenity and golden glow reflecting off the sacred waters of the Sarovar in Amritsar is unforgettable.”"
+    },
+    guest: "Carlos & Marta (Valencia)"
+  },
+  {
     id: "traveler-rajasthan",
     img: "/images/gallery/traveler-rajasthan.jpg",
     title: { es: "Encuentros Culturales en Rajastán", en: "Cultural Encounters in Rajasthan" },
@@ -23,6 +56,28 @@ const GALLERY_ITEMS = [
       en: "“Sharing smiles with local women in Jaipur. Victor connected us with real people in a warm, genuine way.”"
     },
     guest: "Clara M. (Madrid)"
+  },
+  {
+    id: "gangaur-male-traveler",
+    img: "/images/gallery/gangaur-male-traveler.jpg",
+    title: { es: "Alegría Festiva en Rajastán", en: "Festive Joy in Rajasthan" },
+    location: { es: "Jaipur, Rajastán", en: "Jaipur, Rajasthan" },
+    caption: {
+      es: "«Vivir las festividades locales con el marco conmemorativo de Gangaur '26. India es pura energía.»",
+      en: "“Experiencing local festivities with the Gangaur '26 frame. India is pure vibrant energy.”"
+    },
+    guest: "Pablo R. (Bilbao)"
+  },
+  {
+    id: "golden-temple-reflection",
+    img: "/images/gallery/golden-temple-reflection.jpg",
+    title: { es: "Reflejos Sagrados en Amritsar", en: "Sacred Reflections in Amritsar" },
+    location: { es: "Amritsar, Punjab", en: "Amritsar, Punjab" },
+    caption: {
+      es: "«Una atmósfera de paz y hospitalidad sin igual. El Templo Dorado nos tocó el corazón.»",
+      en: "“An atmosphere of unmatched peace and hospitality. The Golden Temple touched our hearts.”"
+    },
+    guest: "Familia Navarro (Málaga)"
   },
   {
     id: "ganga-aarti-night",
