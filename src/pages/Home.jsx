@@ -134,16 +134,31 @@ export default function Home() {
               ))}
             </ul>
           </div>
-          <div className="reveal" style={{ background: "var(--indigo)", color: "var(--ivory)", padding: 40 }}>
-            <span className="label" style={{ color: "var(--marigold)" }}>{t({ es: "Tu guía", en: "Your guide" })}</span>
-            <h3 style={{ fontSize: 24, margin: "12px 0 6px", color: "var(--ivory)" }}>
-              {t({ es: "Victor — Guía y escolta turístico", en: "Victor — Tourist guide and escort" })}
-            </h3>
-            <p style={{ fontSize: 14, color: "rgba(246,240,228,0.7)" }}>
-              {t({ es: "Español e inglés · 18 años de experiencia", en: "Spanish and English · 18 years of experience" })}
+          <div className="reveal" style={{ background: "var(--indigo)", color: "var(--ivory)", padding: 40, borderRadius: 4 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 20 }}>
+              <img
+                src="/images/guide-victor.png"
+                alt="Victor Guía Turístico"
+                style={{ width: 84, height: 84, borderRadius: "50%", objectFit: "cover", border: "2px solid var(--marigold)" }}
+              />
+              <div>
+                <span className="label" style={{ color: "var(--marigold)" }}>{t({ es: "Tu guía", en: "Your guide" })}</span>
+                <h3 style={{ fontSize: 22, margin: "4px 0 2px", color: "var(--ivory)" }}>
+                  {t({ es: "Victor — Guía turístico", en: "Victor — Tour Guide" })}
+                </h3>
+                <p style={{ fontSize: 13, color: "rgba(246,240,228,0.8)" }}>
+                  {t({ es: "Español e inglés · 18 años en ruta", en: "Spanish and English · 18 years experience" })}
+                </p>
+              </div>
+            </div>
+            <p style={{ fontSize: 14, color: "rgba(246,240,228,0.85)", lineHeight: 1.5, marginBottom: 20 }}>
+              {t({
+                es: "Guía oficial certificado. Acompaño personalmente a cada grupo para garantizar una experiencia privada, auténtica y fluida en español.",
+                en: "Certified official guide. I personally accompany every group to guarantee a private, authentic and smooth experience in Spanish."
+              })}
             </p>
-            <p style={{ marginTop: 20, fontSize: 14 }}>vickyguide951@gmail.com</p>
-            <p style={{ fontSize: 14 }}>+91 894 945 4247</p>
+            <p style={{ fontSize: 14 }}>📧 vickyguide951@gmail.com</p>
+            <p style={{ fontSize: 14, marginTop: 4 }}>📱 +91 894 945 4247</p>
           </div>
         </div>
       </section>

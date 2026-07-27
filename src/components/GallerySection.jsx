@@ -3,6 +3,39 @@ import { useT } from "../context/LangContext.jsx";
 
 const GALLERY_ITEMS = [
   {
+    id: "victor-guide-selfie",
+    img: "/images/gallery/victor-guide-selfie.png",
+    title: { es: "Victor — Tu Guía en India", en: "Victor — Your Guide in India" },
+    location: { es: "Experiencia de Viaje", en: "Travel Experience" },
+    caption: {
+      es: "«Victor acompañándonos y compartiendo la auténtica riqueza cultural y artística del subcontinente indio.»",
+      en: "“Victor guiding us and sharing the authentic cultural and artistic wealth of the Indian subcontinent.”"
+    },
+    guest: "Victor — Guía Certificado"
+  },
+  {
+    id: "traveler-namaste-taj",
+    img: "/images/gallery/traveler-namaste-taj.png",
+    title: { es: "Namaste en el Taj Mahal", en: "Namaste at the Taj Mahal" },
+    location: { es: "Agra, Uttar Pradesh", en: "Agra, Uttar Pradesh" },
+    caption: {
+      es: "«Un instante de paz y respeto luciendo ropa tradicional india frente al mausoleo del amor eterno.»",
+      en: "“A moment of peace and respect wearing traditional Indian clothing in front of the mausoleum of eternal love.”"
+    },
+    guest: "Camila R. (Madrid)"
+  },
+  {
+    id: "painted-arches-jaipur",
+    img: "/images/gallery/painted-arches-jaipur.jpg",
+    title: { es: "Arcos Pintados de Rajastán", en: "Painted Arches of Rajasthan" },
+    location: { es: "Jaipur, Rajastán", en: "Jaipur, Rajasthan" },
+    caption: {
+      es: "«La asombrosa arquitectura y los detallados frescos de los palacios reales de Rajastán.»",
+      en: "“The astonishing architecture and detailed frescoes of Rajasthan's royal palaces.”"
+    },
+    guest: "Teresa & Manuel (Sevilla)"
+  },
+  {
     id: "patrika-gate-jaipur",
     img: "/images/gallery/patrika-gate-jaipur.jpg",
     title: { es: "Puerta de Patrika y Reflejo en Jaipur", en: "Patrika Gate & Reflection in Jaipur" },
@@ -12,17 +45,6 @@ const GALLERY_ITEMS = [
       en: "“The famous pink facade of Patrika Gate reflected perfectly in the water. Stunning photography in Jaipur.”"
     },
     guest: "Alba & Sergio (Barcelona)"
-  },
-  {
-    id: "rajasthan-folk-dancers",
-    img: "/images/gallery/rajasthan-folk-dancers.jpg",
-    title: { es: "Danzas Folclóricas de Rajastán", en: "Rajasthani Folk Dancers" },
-    location: { es: "Palacio de Jaipur", en: "Jaipur City Palace" },
-    caption: {
-      es: "«Bailarines tradicionales celebrando con turbantes y cascabeles en las puertas del palacio durante las fiestas de Rajastán.»",
-      en: "“Traditional dancers celebrating with turbans and ankle bells at the palace gates during Rajasthani festivals.”"
-    },
-    guest: "Gonzalo & Patricia (Madrid)"
   },
   {
     id: "saree-group-taj",
@@ -47,26 +69,26 @@ const GALLERY_ITEMS = [
     guest: "Grupo de Viajeros (España)"
   },
   {
-    id: "rajasthan-musician-bagpipe",
-    img: "/images/gallery/rajasthan-musician-bagpipe.jpg",
-    title: { es: "Música Tradicional Mashak", en: "Traditional Mashak Music" },
-    location: { es: "Rajastán", en: "Rajasthan" },
+    id: "kathakali-figures",
+    img: "/images/gallery/kathakali-figures.jpg",
+    title: { es: "Danza Tradicional Kathakali", en: "Traditional Kathakali Dance" },
+    location: { es: "Kerala & Arte del Sur", en: "Kerala & Southern Art" },
     caption: {
-      es: "«Músicos locales tocando la gaita tradicional de Rajastán vestidos de gala festiva dorada.»",
-      en: "“Local musicians playing traditional Rajasthani bagpipes dressed in golden festive regalia.”"
+      es: "«Descubriendo el fascinante vestuario y maquillaje dramático de las danzas sagradas del sur de India.»",
+      en: "“Discovering the fascinating costumes and dramatic makeup of South India's sacred dances.”"
     },
-    guest: "Laura & Miguel (Sevilla)"
+    guest: "Raúl & Beatriz (Valencia)"
   },
   {
-    id: "gangaur-idol-procession",
-    img: "/images/gallery/gangaur-idol-procession.jpg",
-    title: { es: "Procesión de la Diosa Gauri", en: "Procession of Goddess Gauri" },
-    location: { es: "Festival Gangaur, Jaipur", en: "Gangaur Festival, Jaipur" },
+    id: "rajasthan-folk-dancers",
+    img: "/images/gallery/rajasthan-folk-dancers.jpg",
+    title: { es: "Danzas Folclóricas de Rajastán", en: "Rajasthani Folk Dancers" },
+    location: { es: "Palacio de Jaipur", en: "Jaipur City Palace" },
     caption: {
-      es: "«La sagrada imagen de la diosa bellamente adornada con guirnaldas de flores en la gran procesión real de Gangaur.»",
-      en: "“The sacred image of the goddess beautifully adorned with flower garlands in the royal Gangaur procession.”"
+      es: "«Bailarines tradicionales celebrando con turbantes y cascabeles en las puertas del palacio durante las fiestas de Rajastán.»",
+      en: "“Traditional dancers celebrating with turbans and ankle bells at the palace gates during Rajasthani festivals.”"
     },
-    guest: "Familia Jiménez (Valencia)"
+    guest: "Gonzalo & Patricia (Madrid)"
   },
   {
     id: "gangaur-female-traveler",
@@ -100,6 +122,17 @@ const GALLERY_ITEMS = [
       en: "“Sharing smiles with local women in Jaipur. Victor connected us with real people in a warm, genuine way.”"
     },
     guest: "Clara M. (Madrid)"
+  },
+  {
+    id: "classical-dance-display",
+    img: "/images/gallery/classical-dance-display.jpg",
+    title: { es: "Figuras Clásicas Mohiniyattam", en: "Classical Mohiniyattam Figures" },
+    location: { es: "Cultura e Historia", en: "Culture & History" },
+    caption: {
+      es: "«Un recorrido repleto de mitología, historia y arte tradicional guiado paso a paso por Victor.»",
+      en: "“A journey filled with mythology, history, and traditional art guided step-by-step by Victor.”"
+    },
+    guest: "Inés & Fernando (Barcelona)"
   },
   {
     id: "gangaur-male-traveler",
