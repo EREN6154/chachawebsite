@@ -26,6 +26,50 @@ const GALLERY_ITEMS = [
     guest: "Viajeros de Madrid & Valencia"
   },
   {
+    id: "victor-taj-mahal-saree",
+    img: "/images/gallery/victor-taj-mahal-saree.jpg",
+    title: { es: "Vestidos de Kurta y Saree en el Taj Mahal", en: "Dressed in Kurta & Saree at Taj Mahal" },
+    location: { es: "Agra, Uttar Pradesh", en: "Agra, Uttar Pradesh" },
+    caption: {
+      es: "«Lucir vestidos tradicionales de la India junto a Victor frente al icónico mausoleo de mármol blanco.»",
+      en: "“Wearing traditional Indian attire with Victor in front of the iconic white marble mausoleum.”"
+    },
+    guest: "Grupo de Viajeros (Barcelona & Madrid)"
+  },
+  {
+    id: "ganges-boat-diyas-varanasi",
+    img: "/images/gallery/ganges-boat-diyas-varanasi.png",
+    title: { es: "Ofrenda de Lámparas Flotantes en el Ganges", en: "Floating Oil Lamps Ceremony on the Ganges" },
+    location: { es: "Varanasi, Uttar Pradesh", en: "Varanasi, Uttar Pradesh" },
+    caption: {
+      es: "«Navegar al amanecer por el río sagrado Ganges y ofrecer lámparas flotantes de caléndula (diyas).»",
+      en: "“Sailing at sunrise on the sacred Ganges river and offering floating marigold lamps (diyas).”"
+    },
+    guest: "Viajeros de Zaragoza & Valencia"
+  },
+  {
+    id: "victor-varanasi-temple",
+    img: "/images/gallery/victor-varanasi-temple.png",
+    title: { es: "Victor con Viajeros en Templo de Varanasi", en: "Victor with Travelers at Varanasi Temple" },
+    location: { es: "Varanasi, Uttar Pradesh", en: "Varanasi, Uttar Pradesh" },
+    caption: {
+      es: "«Descubriendo los templos sagrados de Kashi y la estatua de Bharat Mata acompañados por Victor.»",
+      en: "“Discovering the sacred temples of Kashi and the Bharat Mata statue accompanied by Victor.”"
+    },
+    guest: "Grupo de Viajeros (Sevilla & Bilbao)"
+  },
+  {
+    id: "victor-mehtab-bagh-taj",
+    img: "/images/gallery/victor-mehtab-bagh-taj.jpg",
+    title: { es: "Victor y Viajeras en Mehtab Bagh (Taj Mahal)", en: "Victor & Travelers at Mehtab Bagh" },
+    location: { es: "Agra, Uttar Pradesh", en: "Agra, Uttar Pradesh" },
+    caption: {
+      es: "«Disfrutando de las vistas panorámicas del Taj Mahal al atardecer desde los jardines de Mehtab Bagh.»",
+      en: "“Enjoying panoramic views of the Taj Mahal at sunset from Mehtab Bagh gardens.”"
+    },
+    guest: "Laura & Carmen (Madrid)"
+  },
+  {
     id: "victor-bangla-sahib-selfie",
     img: "/images/gallery/victor-bangla-sahib-selfie.jpg",
     title: { es: "Victor en Gurudwara Bangla Sahib", en: "Victor at Gurudwara Bangla Sahib" },
