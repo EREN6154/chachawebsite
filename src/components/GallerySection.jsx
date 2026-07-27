@@ -3,6 +3,17 @@ import { useT } from "../context/LangContext.jsx";
 
 const GALLERY_ITEMS = [
   {
+    id: "group-jama-masjid",
+    img: "/images/gallery/group-jama-masjid.jpg",
+    title: { es: "Grupo de Viajeros en Jama Masjid", en: "Travel Group at Jama Masjid" },
+    location: { es: "Vieja Delhi", en: "Old Delhi" },
+    caption: {
+      es: "«Nuestro grupo explorando la majestuosa mezquita Jama Masjid con Victor. Una experiencia privada e inolvidable juntos.»",
+      en: "“Our group exploring the majestic Jama Masjid mosque with Victor. A private and unforgettable experience together.”"
+    },
+    guest: "Grupo de Viajeros (España)"
+  },
+  {
     id: "traveler-rajasthan",
     img: "/images/gallery/traveler-rajasthan.jpg",
     title: { es: "Encuentros Culturales en Rajastán", en: "Cultural Encounters in Rajasthan" },
@@ -14,15 +25,15 @@ const GALLERY_ITEMS = [
     guest: "Clara M. (Madrid)"
   },
   {
-    id: "varanasi-boat-sadhu",
-    img: "/images/gallery/varanasi-boat-sadhu.jpg",
-    title: { es: "Amanecer Espiritual en Varanasi", en: "Spiritual Sunrise in Varanasi" },
-    location: { es: "Varanasi, Uttar Pradesh", en: "Varanasi, Uttar Pradesh" },
+    id: "ganga-aarti-night",
+    img: "/images/gallery/ganga-aarti-night.jpg",
+    title: { es: "Ceremonia Ganga Aarti Nocturna", en: "Night Ganga Aarti Ceremony" },
+    location: { es: "Dashashwamedh Ghat, Varanasi", en: "Dashashwamedh Ghat, Varanasi" },
     caption: {
-      es: "«Navegando al amanecer por los ghats sagrados del río Ganges. Una experiencia mística irrepetible.»",
-      en: "“Sailing at sunrise along the sacred ghats of the Ganges River. A truly mystical experience.”"
+      es: "«Observar el ritual del fuego y luces desde una barca al anochecer en el Ganges quita el aliento.»",
+      en: "“Watching the ritual of fire and lights from a boat at dusk on the Ganges is breathtaking.”"
     },
-    guest: "Pedro & Lucía (Sevilla)"
+    guest: "Isabel & Fernando (Valencia)"
   },
   {
     id: "taj-mahal-sunset",
@@ -36,6 +47,17 @@ const GALLERY_ITEMS = [
     guest: "Sofía G. (Valencia)"
   },
   {
+    id: "sadhu-yellow-robe",
+    img: "/images/gallery/sadhu-yellow-robe.jpg",
+    title: { es: "Monje en las Escalinatas del Ganges", en: "Monk on the Ganges Steps" },
+    location: { es: "Varanasi", en: "Varanasi" },
+    caption: {
+      es: "«Caminar por los ghats de Varanasi al amanecer permite capturar estampas únicas de devoción y paz.»",
+      en: "“Walking the ghats of Varanasi at sunrise allows capturing unique scenes of devotion and peace.”"
+    },
+    guest: "Rodrigo M. (Bilbao)"
+  },
+  {
     id: "hawa-mahal",
     img: "/images/gallery/hawa-mahal.jpg",
     title: { es: "Hawa Mahal al Anochecer", en: "Hawa Mahal at Dusk" },
@@ -47,15 +69,37 @@ const GALLERY_ITEMS = [
     guest: "David & Laura (Bilbao)"
   },
   {
-    id: "sadhu-marigold",
-    img: "/images/gallery/sadhu-marigold.jpg",
-    title: { es: "Retrato de Sadhu con Flores de Caléndula", en: "Sadhu Portrait with Marigold Flowers" },
+    id: "sadhu-smiling",
+    img: "/images/gallery/sadhu-smiling.jpg",
+    title: { es: "Sonrisa y Color en la India Espiritual", en: "Smile & Color in Spiritual India" },
     location: { es: "Varanasi", en: "Varanasi" },
     caption: {
-      es: "«Conocer la devoción y tradiciones de los hombres sagrados de India con el respeto que inspira nuestro guía Victor.»",
-      en: "“Learning about the devotion and traditions of India's holy men with the deep respect guided by Victor.”"
+      es: "«La amabilidad de la gente local e itinerantes sagrados nos cautivó durante todo el recorrido.»",
+      en: "“The friendliness of the local people and holy wanderers captivated us throughout the trip.”"
     },
-    guest: "Familia Ramos (Barcelona)"
+    guest: "Carmen & Tomás (Alicante)"
+  },
+  {
+    id: "varanasi-boat-sadhu",
+    img: "/images/gallery/varanasi-boat-sadhu.jpg",
+    title: { es: "Amanecer Espiritual en Varanasi", en: "Spiritual Sunrise in Varanasi" },
+    location: { es: "Varanasi, Uttar Pradesh", en: "Varanasi, Uttar Pradesh" },
+    caption: {
+      es: "«Navegando al amanecer por los ghats sagrados del río Ganges. Una experiencia mística irrepetible.»",
+      en: "“Sailing at sunrise along the sacred ghats of the Ganges River. A truly mystical experience.”"
+    },
+    guest: "Pedro & Lucía (Sevilla)"
+  },
+  {
+    id: "elephant-eye",
+    img: "/images/gallery/elephant-eye.jpg",
+    title: { es: "Mirada Salvaje — Fauna en India", en: "Wild Gaze — Wildlife in India" },
+    location: { es: "Parque Nacional Ranthambore", en: "Ranthambore National Park" },
+    caption: {
+      es: "«La conexión íntima con la naturaleza y fauna salvaje durante nuestras excursiones en la selva.»",
+      en: "“The intimate connection with nature and wildlife during our jungle excursions.”"
+    },
+    guest: "Álvaro T. (Madrid)"
   },
   {
     id: "qutub-minar",
@@ -77,7 +121,7 @@ const GALLERY_ITEMS = [
       es: "«Un momento mágico contemplando el palacio del agua al atardecer en Jaipur con nuestro coche y guía privado.»",
       en: "“A magical moment looking out at the water palace at sunset in Jaipur with our private car & guide.”"
     },
-    guest: "Carlos & Elena (Málaga)"
+    guest: "Familia Ramos (Barcelona)"
   },
   {
     id: "humayun-tomb",
@@ -100,6 +144,17 @@ const GALLERY_ITEMS = [
       en: "“Capturing the mystical essence of Hinduism on the banks of the sacred river in Varanasi.”"
     },
     guest: "Marta & Marcos (Alicante)"
+  },
+  {
+    id: "sadhu-marigold",
+    img: "/images/gallery/sadhu-marigold.jpg",
+    title: { es: "Retrato de Sadhu con Flores de Caléndula", en: "Sadhu Portrait with Marigold Flowers" },
+    location: { es: "Varanasi", en: "Varanasi" },
+    caption: {
+      es: "«Conocer la devoción y tradiciones de los hombres sagrados de India con el respeto que inspira nuestro guía Victor.»",
+      en: "“Learning about the devotion and traditions of India's holy men with the deep respect guided by Victor.”"
+    },
+    guest: "Familia Ramos (Barcelona)"
   },
   {
     id: "sadhu-dreadlocks",
