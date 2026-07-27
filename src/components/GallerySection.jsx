@@ -26,17 +26,6 @@ const GALLERY_ITEMS = [
     guest: "Marta, Elena & Carmen (Valencia)"
   },
   {
-    id: "amer-fort-elephant-ride",
-    img: "/images/gallery/amer-fort-elephant-ride.jpg",
-    title: { es: "Subida al Fuerte Amber", en: "Elephant Ride at Amber Fort" },
-    location: { es: "Amber, Rajastán", en: "Amber, Rajasthan" },
-    caption: {
-      es: "«Subir al histórico Fuerte Amber como los antiguos maharajás con sombrilla tradicional.»",
-      en: "“Ascending historical Amber Fort like the ancient Maharajas with traditional sun umbrellas.”"
-    },
-    guest: "Ignacio & Teresa (Sevilla)"
-  },
-  {
     id: "victor-traveler-selfie",
     img: "/images/gallery/victor-traveler-selfie.jpg",
     title: { es: "Bienvenida y Recepción Privada", en: "Welcome & Private Reception" },
@@ -46,6 +35,28 @@ const GALLERY_ITEMS = [
       en: "“From arrival at the hotel until the last day, Victor makes sure everything runs perfectly.”"
     },
     guest: "David S. (Barcelona)"
+  },
+  {
+    id: "traveler-namaste-taj",
+    img: "/images/gallery/traveler-namaste-taj.png",
+    title: { es: "Namaste en el Taj Mahal", en: "Namaste at the Taj Mahal" },
+    location: { es: "Agra, Uttar Pradesh", en: "Agra, Uttar Pradesh" },
+    caption: {
+      es: "«Un instante de paz y respeto luciendo ropa tradicional india frente al mausoleo del amor eterno.»",
+      en: "“A moment of peace and respect wearing traditional Indian clothing in front of the mausoleum of eternal love.”"
+    },
+    guest: "Camila R. (Madrid)"
+  },
+  {
+    id: "amer-fort-elephant-ride",
+    img: "/images/gallery/amer-fort-elephant-ride.jpg",
+    title: { es: "Subida al Fuerte Amber", en: "Elephant Ride at Amber Fort" },
+    location: { es: "Amber, Rajastán", en: "Amber, Rajasthan" },
+    caption: {
+      es: "«Subir al histórico Fuerte Amber como los antiguos maharajás con sombrilla tradicional.»",
+      en: "“Ascending historical Amber Fort like the ancient Maharajas with traditional sun umbrellas.”"
+    },
+    guest: "Ignacio & Teresa (Sevilla)"
   },
   {
     id: "shore-temple-mahabalipuram",
@@ -398,24 +409,34 @@ export default function GallerySection() {
         </div>
 
         <div className="gallery-grid">
-          {visibleItems.map((item, idx) => (
-            <div
-              key={item.id}
-              className="gallery-card"
-              onClick={() => setSelectedIdx(idx)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => e.key === "Enter" && setSelectedIdx(idx)}
-            >
-              <img src={item.img} alt={t(item.title)} loading="lazy" />
-              <div className="gallery-card-overlay">
-                <span className="gallery-badge">{t(item.location)}</span>
-                <h4>{t(item.title)}</h4>
-                <p>{t(item.caption)}</p>
-                <span className="gallery-guest">— {item.guest}</span>
+          {visibleItems.map((item) => {
+            const realIdx = GALLERY_ITEMS.findIndex((g) => g.id === item.id);
+            return (
+              <div
+                key={item.id}
+                className="gallery-card"
+                onClick={() => setSelectedIdx(realIdx)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => e.key === "Enter" && setSelectedIdx(realIdx)}
+              >
+                <img
+                  src={item.img}
+                  alt={t(item.title)}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "/images/gallery/victor-india-gate.jpg";
+                  }}
+                />
+                <div className="gallery-card-overlay">
+                  <span className="gallery-badge">{t(item.location)}</span>
+                  <h4>{t(item.title)}</h4>
+                  <p>{t(item.caption)}</p>
+                  <span className="gallery-guest">— {item.guest}</span>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div style={{ marginTop: 32, textAlign: "center" }}>
